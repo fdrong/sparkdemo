@@ -26,3 +26,14 @@ import time
 # print(wc.toDebugString())
 # counts = wc.reduceByKey(add)
 # counts.saveAsTextFile('wc')
+from collections import namedtuple, defaultdict
+# fields = ('date', 'airline', 'flightnum', 'origin', 'dest', 'dep',
+#             'dep_delay', 'arv', 'arv_delay', 'airtime', 'distance')
+# Flight = namedtuple('Flight', fields)
+s = [('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
+d = defaultdict(list)
+for k, v in s:
+    d[k].append(v)
+print d.items()
+
+print d['black']
