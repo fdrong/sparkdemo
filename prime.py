@@ -43,3 +43,4 @@ for i in xrange(1000000):
     if isprime(i):
         total += 1
 print("primes total:{}, cost: {}s".format(total, time.time()-end))
+print("TestSTEHFbqEc1ZpA2w5ifloBOUDjXJvGVQN3R9")
